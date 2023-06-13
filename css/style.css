@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --bg-color: #161620;
+    --text-color: #FFFFFF;
+    --main-color: #34e7f8;
+    --other-color: #fcfcfc;
+    --red-color: rgb(167, 16, 16);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+@media screen and (min-width:768px) {
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+#menu {
+    display: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+}
+
+.logo-header{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo-header p {
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#logo-desktop {
+    color: var(--main-color);
+    display: flex;
+    width: 20px;
+    margin: 10px;
+}
+
+.navegacao {
+    display: flex;
+}
+
+.navegacao a {
+    padding: 0px 20px;
+    color: var(--other-color);
+    font-size: 17px;
+    transition: all .55s ease;
+}
+
+.navegacao a:hover{
+    color: var(--main-color);
+}
+
+/*main*/
+
+.geral {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+
+.computador {
+    max-width: auto;
+    max-height: auto;
+    width: 500px;
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+.texto-geral {
+    margin-top: 250px;
+    flex-direction: column;
+    text-align: center; 
+    margin-right: 30px;
+}
+
+.texto-geral h1{
+    margin-bottom: 20px;
+    font-size: 45px;
+    color: var(--red-color);
+}
+
+.texto-geral p{
+    margin-bottom: 20px;
+    color: var(--other-color);
+}
+
+.texto-geral a{
+    border-style: solid;
+    border-radius: 8px;
+    border-color: var(--main-color);
+    padding: 5px 20%;
+    color: var(--other-color);
+    font-weight: bolder;
+    background-color: var(--main-color);
+    transition: all .55s ease-in;
+}
+
+.texto-geral a:hover{
+    color: var(--red-color);
+}
+
+}
+
+.partes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 200px;
+    margin: 10px 150px;
+}
+
