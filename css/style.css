@@ -38,6 +38,8 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 30px 8%;
+    background-color: #161620;
+    position: fixed;
 }
 
 .logo-header{
@@ -76,7 +78,7 @@ header{
 
 /*main*/
 
-.geral {
+#overview {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -91,25 +93,25 @@ header{
     margin-left: 30px;
 }
 
-.texto-geral {
+.text-overview {
     margin-top: 250px;
     flex-direction: column;
     text-align: center; 
     margin-right: 30px;
 }
 
-.texto-geral h1{
+.text-overview h1{
     margin-bottom: 20px;
     font-size: 45px;
     color: var(--red-color);
 }
 
-.texto-geral p{
+.text-overview p{
     margin-bottom: 20px;
     color: var(--other-color);
 }
 
-.texto-geral a{
+.text-overview a{
     border-style: solid;
     border-radius: 8px;
     border-color: var(--main-color);
@@ -120,19 +122,59 @@ header{
     transition: all .55s ease-in;
 }
 
-.texto-geral a:hover{
+.text-overview h2{
+    color: var(--other-color);
+    margin: 40px;
+}
+
+.text-overview a:hover{
     color: var(--red-color);
 }
 
+.parts {
+    display: flex;
+    justify-content: space-around;
 }
 
-.partes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.hardware {
     border-style: solid;
     border-width: 1px;
-    border-radius: 200px;
-    margin: 10px 150px;
+    border-radius: 15px;
+    width: 250px;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--other-color);
+    background-color: rgb(14, 15, 34);
+    margin: 40px 20px;
 }
 
+#setup {
+    margin-left: 40px;
+}
+
+#setup h1 {
+    color:rgb(167, 16, 16);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#setup h3 {
+    font-size: 25px;
+    border-left: #34e7f8;
+    border-left-style:groove;
+    padding-left: 10px;
+
+}
+
+#setup p {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+
+}

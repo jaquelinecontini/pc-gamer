@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
 
     <title>PC Gamer</title>
@@ -19,9 +17,9 @@
         </a>
 
         <ul class="navegacao">
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Set Up</a></li>
-            <li><a href="#">Reviews</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#setup">Setup</a></li>
+            <li><a href="#">About us</a></li>
             <li><a href="#">Contact us</a></li>
         </ul>
 
@@ -37,37 +35,96 @@
     </header>
 
     <main>
-        <section class="geral">
+        <section id="overview">
             <div>
                 <img src="img/pc-completo.png" class="computador" alt="Imagem PC">
             </div>
 
-            <div class="texto-geral">
+            <div class="text-overview">
                 <h1>PC Gamer</h1>
                 <p>Your best experience in your hands.</p>
                 <a href="#" id="botao-compre">BUY IT NOW</a>
+                <h2>FOR $ 3,200</h2>
             </div>
         </section>
 
-        <section class="partes">
-                <div class="gabinete">
-                    <a href="#">CPU Ryzen 5950X</a>
-                    <a href="#">GPU NVIDIA RTX 4090</a>
-                    <a href="#">Motherboard X570Asus Plus</a>
-                    <a href="#">RAM 16 GB Corsair Vengance</a>
+        <section class="parts">
+                <div class="hardware">
+                    <p><a href="#">CPU Ryzen 5950X</a></p>
+                    <br>
+                    <p></p><a href="#">GPU NVIDIA RTX 4090</a></p>
+                    <br>
+                    <p></p><a href="#">Motherboard X570 Asus Plus</a></p>
+                    <br>
                 </div>
-                <div class="monitor">
-                    <a href="#">BenqZowie XL2546k</a>
+                <div class="hardware">
+                    <p></p><a href="#">Monitor Benq Zowie XL2546k</a></p>
+                    <br>
+                    <p></p><a href="#">RAM 16 GB Corsair Vengance</a></p>
                 </div>
-                <div class="perifericos">
-                    <a href="#">Mouse Zowie EC2-A</a>
-                    <a href="#">Keyboard HyperX Alloy FPS</a>
+                <div class="hardware">
+                    <p><a href="#">Mouse Zowie EC2-A</a></p>
+                    <br>
+                    <p><a href="#">Keyboard HyperX Alloy FPS</a></p>
+                    <br>
+                    <p><a href="#">Power Supply Corsair RM850x</a></p>
                 </div>
+        </section>
+
+        <section id="setup">
+            <h1>Setup Specs</h1>
+            <div>
+                <h3 class="specs">CPU AMD Ryzen 9 5950X</h3>
+                <p class="description">Launch Date: 11/5/2020 <br> # of CPU Cores: 16 <br> Base Clock: 3.4GHz <br> CPU Socket: AM4 
+                <br> # of Threads: 32 <br> L2 Cache: 8MB <br> Max. Boost Clock: Up to 4.9GHz</p>
+            </div><br>
+            <div>
+                <h3 class="specs">GPU NVIDIA RTX 4090</h3>
+                <p class="description">NVIDIA CUDA Cores: 16384 <br> Boost Clock: 2.52GHz <br> Memory Size: 24GB
+                <br> Memory Type: GDDR6X</p>
+            </div><br>
+            <div>
+                <h3 class="specs">Motherboard X570 Asus Plus</h3>
+                <p class="description">CPU socket: AM4 <br> Chipset : AMD X570 <br> M.2 Slots: 2x PCIe 4.0 x4, SATA III <br>
+                    SATA: 8x SATA III <br> Memory support: 4x DDR4 <br> Maximum Capacity: 128 GB <br> USB: 2x 2.0 Header, 1x 3.0 /3.1/ 2.2 Gen 1 Header 
+                 <br> Wi-fi: Wi-fi 5 (802.11ac) <br> Form Factor ATX <br> Audio Codec: Realtek ALC S1200A (8-Channel)</p>
+            </div><br>
+            <div>
+                <h3 class="specs">Monitor Benq Zowie XL2546k</h3>
+                <p class="description">LCD size (inch): 24.5" <br> Aspect ratio: 16:9 <br> Max. resolution: 1920x1080 at 240Hz (HDMI 2.0, DP)
+                <br> Refresh rate: 240Hz <br> Connectivity Input/Output: HDMI 2.0 x3 /DP 1.2 /headphone jack <br> Voltage rating: 100-240V <br>
+                Dimensions (HxWxD mm): 521 (Highest)/ 366 (Lowest) x 571 x 200</p>
+            </div><br>
+            <div>
+                <h3 class="specs">RAM RAM 16 GB Corsair Vengance</h3>
+                <p class="description">Memory Size: 16GB <br> Memory Type: DDR4<br> Speed rating: PC4-25600 (3200MHz) <br> SPD Speed: 2133MHz
+                <br> SPD Latency: 15-15-15-36 <br> </p>
+            </div><br>
+            <div>
+                <h3 class="specs">Mouse Zowie EC2-A</h3>
+                <p class="description">DPI: 400/800/1600/3200 <br> USB: USB 2.0/3.0 Plug & Play <br> Buttons: 5 buttons <br>
+                Report Rate: 125/500/1000 Hz <br> Size: Medium <br> Desing: Ergonomic</p>
+            </div><br>
+            <div>
+                <h3 class="specs">Keyboard HyperX Alloy FPS</h3>
+                <p class="description">Keyboard Type: Mechanical <br> Key Switches: Kailk Silver SpeedLinear <br> Blacklight: RGB
+                <br> Connection Type: USB 2.0 (2x USB connectors) <br> Anti-Ghosting: 100 percent <br> Media Control: Yes
+                <br>Dimensions 442.3 x 129.8 x 35.6mm </p>
+            </div><br>
+
+            <div>
+                <h3 class="specs">Power Supply Corsair RM850x</h3>
+                <p class="description">Max. DC Output: 850w <br> Efficiency: 80 PLUS Gold <br> Modular: Yes <br>
+                Manufacturer: CWT</p>
+            </div>
+
+
         </section>
 
 
     </main>
 
+    <script src="app.js"></script>
     
 </body>
 </html>
