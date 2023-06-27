@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+</head>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo-header">
+            <img src="logo/icons8-pc-96.png" id="logo-desktop" alt="Ícone Desktop">
+            <p>PC Gamer</p>
+        </a>
+        
+        <nav>
+            <ul class="navegacao">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-icons">
+            <a href="#" id='cart'>
+                <img src="logo/bx-cart.svg">
+            </a>
+            <div href="cart.html" id="menu">
+                <img src="logo/menu-icon.svg">
+            </div>
+        </div>
+        <div href="#" id="menu">
+            <img src="logo/menu-icon.svg">
+        </div>
+        
+    </header>
+    
+    <main>
+        <form class="form">
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" class="input-padrao" required placeholder="Your full name">
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="youremail@email.com">
+            
+            <label for="telephone">Telephone</label>
+            <input type="tel" id="telephone" class="input-padrao" required placeholder="Telephone">
+            
+            <label for="mensagem">Message</label>
+            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+            
+            <fieldset>
+                <legend>What is the issue?</legend>
+                
+                <label for="radio-guarantee"><input type="radio" name="issue" value="guarantee" id="radio-guarantee">Guarantee</label>
+                
+                <label for="radio-purchase"><input type="radio" name="issue" value="purchase" id="radio-purchase">Purchase</label>
+                
+                <label for="radio-product"><input type="radio" name="issue" value="product" id="radio-product" checked>About the product</label>
+                
+                <label for="radio-delivery"><input type="radio" name="issue" value="delivery" id="radio-delivery">Delivery</label>
+            </fieldset>
+            
+            <label class="checkbox"><input type="checkbox" checked>Would you like to receive product updates and announcements via email?</label>
+            
+            <input type="submit" value="Send message" class="send">
+            
+        </form>
+    </main>
+    
+    <footer></footer>
+</body>
+
+    </html>
